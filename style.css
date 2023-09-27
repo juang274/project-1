@@ -10,7 +10,7 @@ body{
     justify-items: center;
     grid-template-areas: 
     "navbar navbar navbar"
-    "ads content sidebar"
+    "bar content sidebar"
     "footer footer footer";
 }
 
@@ -42,4 +42,8 @@ footer{
 
 aside{
     grid-area: ads;
+}
+
+article{
+    grid-area: content;
 }
