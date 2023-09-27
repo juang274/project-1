@@ -5,9 +5,8 @@ body{
     font-weight: bold;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 50px auto 70px;
-    align-items: center;
-    justify-items: center;
+    grid-template-rows: 50px 1fr 50px;
+
     grid-template-areas: 
     "navbar navbar navbar"
     "bar content sidebar"
@@ -20,6 +19,7 @@ nav{
     justify-content: space-between;
     height: 50px;
     background-color: #f03f3c;
+
  
 }
 
@@ -32,18 +32,36 @@ section{
     display: flex;
 }
 
-header{
+nav{
     grid-area: navbar;
+   
+}
+
+div{
+    padding: 0 10px;
+    background-color: gray;
+    border-radius: 25px;
+    border-style: solid;
+    text-align: left;
+
+}
+
+nav, footer, main{
+    grid-column: span 3;
 }
 
 footer{
     grid-area: footer;
+    background-color: skyblue;
 }
 
-aside{
-    grid-area: ads;
-}
-
-article{
+main{
     grid-area: content;
+    background-color: green;
+    height: auto;
+}
+
+main, footer{
+    align-items: center;
+    text-align: center;
 }
