@@ -87,8 +87,12 @@ form{
 .search2{
     grid-area: content;
     display: flex; 
-    margin: auto;
+    margin: 350px;
     font-size: 25px;
+}
+
+.search2 button{
+    margin: 0 295px;
 }
 
 input, button{
@@ -128,13 +132,11 @@ main{
     grid-area: content;
     height: auto;
     font-size: 100px;
-    margin: 225px 0;
+    margin: 200px 0;
     padding: 0;
 }
 
-.search button{
-    margin: 0 315px;
-}
+
 
 
 main, footer{
@@ -142,3 +144,5 @@ main, footer{
     text-align: center;
 }
 
+#github{
+}
