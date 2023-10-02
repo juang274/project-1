@@ -1,64 +1,90 @@
 body{
     margin: 0;
+    background-image: url(https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    grid-gap: 10px;
+    
     height: 100vh;
     font-family: sans-serif;
     font-weight: bold;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 50px 1fr 50px;
-
+ 
     grid-template-areas: 
     "navbar navbar navbar"
     "bar content sidebar"
     "footer footer footer";
 }
 
-nav{
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.nbar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 50px;
-    background-color: #f03f3c;
+    height: 65px;
 
- 
 }
 
-nav div{
+nav{
+    display: flex;
+    flex-direction: row;
+    height: 65px;
+    justify-content: center;
+}
+
+.nbar div{
     font-size: 20px;
     margin: 10px;
+    font-size: 30px;
 }
 
 section{
     display: flex;
 }
 
-nav{
+.nbar{
     grid-area: navbar;
+    font-size: 20px;
    
+}
+
+.design{
+    border-radius: 50%;
+    padding: 15px;
+    margin: 0 10px;
+    height: 100%;
 }
 
 div{
     padding: 0 10px;
-    background-color: gray;
+    background-color: lightgray;
     border-radius: 25px;
     border-style: solid;
     text-align: left;
 
 }
 
-nav, footer, main{
+.ok{
+}
+
+.nbar, footer, main{
     grid-column: span 3;
 }
 
 footer{
     grid-area: footer;
-    background-color: skyblue;
+    font-size: 20px;
 }
 
 main{
     grid-area: content;
-    background-color: green;
     height: auto;
+    font-size: 50px;
 }
 
 main, footer{
