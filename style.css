@@ -108,14 +108,14 @@ footer{
 }
 
 main{
+    font-family: Comic Sans MS, Comic Sans, cursive	;
     grid-area: content;
     height: auto;
     font-size: 100px;
-    margin: 300px;
+    margin: 300px 0;
     padding: 0;
-    color: transparent;
-
 }
+
 
 main, footer{
     align-items: center;
